@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "uftyssa7ax");
+    </script>
+    <script src="main.js"></script>
+    <title data-translate="titulo_pestana_contacto">Contacto - Mi Página Web</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" accesskey="i" data-translate="menu_inicio" data-translate-tooltip="tooltip_inicio" title="Inicio (Alt + i)"><em>I</em>nicio</a></li>
+                <li><a href="estudios.html" accesskey="s" data-translate="menu_estudios" data-translate-tooltip="tooltip_estudios" title="Estudios (Alt + s)">E<em>s</em>tudios</a></li>
+                <li><a href="aficiones.html" accesskey="a" data-translate="menu_aficiones" data-translate-tooltip="tooltip_aficiones" title="Aficiones (Alt + a)"><em>A</em>ficiones</a></li>
+                <li><span data-translate="menu_contacto">C<em>o</em>ntacto</span></li>
+                
+                <li>
+                    <label for="buscador-ppal">Buscar</label>
+
+                    <input 
+                        id="buscador-ppal"
+                        type="text" 
+                        placeholder="Buscar..." 
+                        onkeyup="miWeb.mostrarSugerencias(this)" 
+                        onkeydown="miWeb.gestionarNavegacion(event, this)" 
+                        role="combobox" 
+                        aria-autocomplete="list" 
+                        aria-expanded="false" 
+                        aria-haspopup="listbox" 
+                        data-translate-placeholder="placeholder_buscar" 
+                        autocomplete="off"
+                    >
+                    <ul role="listbox" tabindex="-1" hidden></ul>
+                </li>
+                
+                <li><button onclick="miWeb.alternarIdioma()" accesskey="l" data-translate="btn_cambiar" data-translate-tooltip="tooltip_idioma" title="Cambiar Idioma (Alt + l)">Eng<em>l</em>ish</button></li>
+            </ul>
+        </nav>
+        <h1 data-translate="contacto_h1_principal">Contacto</h1>
+    </header>
+
+    <main>
+        <p>
+            <a href="index.html" data-translate="menu_inicio">Inicio</a> / <span data-translate="menu_contacto">Contacto</span>
+        </p>
+
+        <section>
+            <h2 data-translate="sec_info_contacto">Información de Contacto</h2>
+            
+            <address>
+                <p>
+                    <strong data-translate="label_estado">Estado:</strong> 
+                    <span data-translate="status_disponible">🟢 Disponible para trabajar</span>
+                </p>
+                <p>
+                    <strong data-translate="label_ubicacion">Ubicación:</strong> 
+                    <span data-translate="text_ubicacion">Oviedo, Asturias, España</span>
+                </p>
+                <p>
+                    <strong data-translate="label_email">Email:</strong> 
+                    <a href="mailto:alegarciamansilla@gmail.com?subject=Contacto%20desde%20Portafolio">alegarciamansilla@gmail.com</a>
+                </p>
+                
+                <p>
+                    <a href="documentos/cv_alejandro.pdf" target="_blank" download>
+                        📄 <span data-translate="btn_descargar_cv">Descargar Currículum (PDF)</span>
+                    </a>
+                </p>
+            </address>
+        </section>
+
+        <section>
+            <h2 data-translate="sec_referencias">Referencias Profesionales</h2>
+            <p data-translate="desc_referencias">Personas que pueden avalar mi trabajo y formación:</p>
+            
+            <div>
+                <article>
+                    <h3>Dr. Juan Pérez</h3>
+                    <p data-translate="ref_1_cargo">Profesor Titular - Universidad de Oviedo</p>
+                    <p>📧 <a href="mailto:ejemplo@uniovi.es">ejemplo@uniovi.es</a></p>
+                </article>
+
+                <article>
+                    <h3>María González</h3>
+                    <p data-translate="ref_2_cargo">Supervisora Técnica - EDP</p>
+                    <p>📧 <a href="mailto:ejemplo@edp.com">ejemplo@edp.com</a></p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2 data-translate="sec_formulario">Envíame un mensaje</h2>
+            <form onsubmit="miWeb.enviarFormulario(event)">
+                
+                <div>
+                    <label for="form_nombre">
+                        <span data-translate="form_nombre">Nombre:</span>
+                    </label>
+                    <input id="form_nombre" type="text" required>
+                </div>
+
+                <div>
+                    <label for="form_email">
+                        <span data-translate="form_email">Correo Electrónico:</span>
+                    </label>
+                    <input id="form_email" type="email" required>
+                </div>
+
+                <div>
+                    <label for="form_mensaje">
+                        <span data-translate="form_mensaje">Mensaje:</span>
+                    </label>
+                    <textarea id="form_mensaje" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" data-translate="form_btn_enviar">Enviar Mensaje</button>
+            </form>
+        </section>
+
+        <section>
+            <h2 data-translate="sec_redes">Redes Sociales</h2>
+            <p data-translate="redes_desc">Puedes encontrarme también en estas plataformas:</p>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com" target="_blank">🔗 LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://github.com" target="_blank">💻 GitHub</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p data-translate="footer_texto">© 2025 Mi Página Web Personal. Todos los derechos reservados.</p>
+        <p data-translate="footer_last_update">Última Actualización: 2025-12-10</p>
+    </footer>
+    
+</body>
+</html>
